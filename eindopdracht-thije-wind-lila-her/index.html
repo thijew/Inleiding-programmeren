@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouw diertje</title>
+    <link rel='stylesheet' href='css/styles.css'>
+</head>
+<body>
+
+    <header>
+        <h1>Geef jouw diertje een naam!</h1>
+        
+            <input id='inputnaam' type='text'>
+            <button >Submit</button>
+        <h1 id='naamDier'>...</h1>
+    </header>
+
+    <nav >
+        <div class='food'>
+            <img value='foods' src='images/apple.svg' alt='apple'>
+            <img src='images/banana.svg' alt='banana'>
+            <img src='images/water.svg' alt='water bottle'>
+    </div>
+
+        <div class='toys'>
+            <img src='images/frisbee.svg' alt='frisbee'>
+            <img src='images/ball.svg' alt='toyball'>
+            <img src='images/dogtoy.svg' alt='dogtoy'>
+    </div>
+    </nav>
+
+    <main>
+
+        <img id='dier' ondrop="drag(null,'kat')" ondragover="allowDrop(event)" src='images/allempty.svg' alt='Crying animal'>
+        
+        <div class='progressbar'>
+            <p>Levens</p>
+            <progress id="health" value="0" max="100"> </progress>
+            <p>Blijheid</p>
+            <progress id="happiness" value="0" max="100"></progress>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Bronnen:</p>
+        <ul>
+            <li><a draggable="false" href='https://www.vectorstock.com/royalty-free-vector/set-cat-faces-with-different-emotions-vector-22845038'>Diertje</a></li>
+            <li><a draggable="false" href='https://www.istockphoto.com/nl/search/2/image?excludenudity=false&mediatype=illustration&phrase=apple'>Appel</a></li>
+            <li><a draggable="false" href='https://www.freevector.com/vector/banana'>Banaan</a></li>
+            <li><a draggable="false" href='https://www.vectorstock.com/royalty-free-vector/blue-bowl-full-water-cat-or-dog-pet-animals-vector-33114583'>Water bakje</a></li>
+            <li><a draggable="false" href='https://www.istockphoto.com/nl/search/2/image?excludenudity=false&mediatype=illustration&phrase=frisbee'>Frisbee</a></li>
+            <li><a draggable="false" href='https://fr.pngtree.com/free-png-vectors/jouet'>Bal</a></li>
+            <li><a draggable="false" href='https://www.svgrepo.com/svg/110244/toy'>Speelgoed</a></li>
+        </ul>
+    </footer>
+
+    <script src='js/script.js'></script>
+</body>
+</html>
